@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Calcular IMC</ion-title>
+  </ion-toolbar>
+</ion-header>  
+
+<ion-content>
+
+  <ion-item>
+    <ion-label position="floating">Altura</ion-label>
+    <ion-input type="number" [(ngModel)]="imc.altura"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label position="floating">Peso</ion-label>
+    <ion-input type="number" [(ngModel)]="imc.peso"></ion-input>
+  </ion-item>
+  
+  <ion-button expand="full" (click)="calcularImc();" color="tertiary">Calcular</ion-button>
+
+  <p>Resultado</p>
+
+  <p> {{imc.resultadoImc}} </p>
+
+</ion-content>
